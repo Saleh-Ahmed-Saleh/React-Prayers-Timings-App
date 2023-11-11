@@ -1,0 +1,88 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+html{
+  direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+body{
+  background-color: black;
+  color: #fff;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.MuiOutlinedInput-notchedOutline {
+	border-color: white !important;
+}
+
+.MuiSvgIcon-root {
+	color: white !important;
+}
+
+#root > div > div > div.MuiGrid2-root.MuiGrid2-container.MuiGrid2-direction-xs-row.css-1pi8xg4-MuiGrid2-root > div:nth-child(3) > div > img{
+  max-width: 150px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.7s;
+  animation: mover 0.7s infinite alternate;
+}  
+
+
+@keyframes mover{
+  0%{
+    transform: translateY((0px));
+  
+}
+  100%{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+}
+
+@media(max-width:450px){
+  #root > div > div > div.MuiGrid2-root.MuiGrid2-container.MuiGrid2-direction-xs-row.css-1pi8xg4-MuiGrid2-root > div:nth-child(3) > div > img
+    {
+      max-width: 100px;
+      margin-top: 20px;
+      margin-left: 40px;
+  }
+
+}
+
