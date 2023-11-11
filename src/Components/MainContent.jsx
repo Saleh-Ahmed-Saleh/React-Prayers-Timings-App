@@ -154,22 +154,17 @@ export default function MainContent() {
     <>
       {/* TOP ROW */}
       <Grid container>
-        <Grid xs={4}>
+        <Grid xs={6}>
           <div>
             <h2>{today}</h2>
             <h1>{selectedCity.displayName}</h1>
           </div>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid xs={6}>
           <div>
             <h2>متبقي حتى صلاة {prayersArray[nextPrayerIndex].displayName}</h2>
             <h1 style={{ fontSize: "25px" }}>{remainingTime}</h1>
-          </div>
-        </Grid>
-        <Grid xs={4}>
-          <div>
-            <img src="/images/moon.png" alt="islamic-icon" />
           </div>
         </Grid>
       </Grid>
